@@ -1,6 +1,6 @@
 # Pusher
 
-**[Demo](https://github.com/kirkstrobeck/pusher)**
+**[Demo](http://kirkstrobeck.github.io/pusher/)**
 
 TLDR; Easily implement native vertical responsive scaling by creating on-the-fly GIFs via base64
 
