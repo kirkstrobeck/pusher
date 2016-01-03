@@ -1,5 +1,7 @@
 # Pusher
 
+**[Demo](https://github.com/kirkstrobeck/pusher)**
+
 TLDR; Easily implement native vertical responsive scaling by creating on-the-fly GIFs via base64
 
 #### Problem: Dynamic native vertical scaling is difficult. Poor solutions include JavaScript and CSS. By using images it can be easily accomplished with images, the building blocks of the web.
@@ -12,8 +14,6 @@ Images from day one have been the only element that respects aspect ratios. Taki
 
 - Use `data-pusher` as the selector
 - `data-width` and `data-height` are the metrics that represent the intended aspect ratio. This would be the same (and will generate) `<img data-pusher data-width="2" data-height="1" />`
-
-
 
 ### Features:
 
