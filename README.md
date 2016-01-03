@@ -15,11 +15,11 @@ Images from day one have been the only element that respects aspect ratios. Taki
 - Use `data-pusher` as the selector
 - `data-width` and `data-height` are the metrics that represent the intended aspect ratio. This would be the same (and will generate) `<img data-pusher data-width="2" data-height="1" />`
 
-### Features:
+### Features
 
 - Automaticly reduces the aspect ratio fraction of the desired size to its smallest implementation to optimize render time
 
-### Libraries:
+### Libraries
 
 - Uses [glif](https://emergent.unpythonic.net/software/01126462511-glif) by Jeff Epler. Was not available on npm or bower
 
