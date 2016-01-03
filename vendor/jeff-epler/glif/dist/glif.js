@@ -1,3 +1,6 @@
+// https://emergent.unpythonic.net/software/01126462511-glif
+// Not available on github, npm, or bower
+
 // glif, a client-side image generator in javascript
 // Copyright (C) 2005 Jeff Epler
 
@@ -19,7 +22,7 @@
 // My understanding of the GIF format is based on reading various documents
 // and credit for the no-lzw way of writing gifs comes via libungif.
 
-function base64Pusher(s) {
+function base64(s) {
     var ch =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
     var c1, c2, c3, e1, e2, e3, e4;
@@ -84,5 +87,5 @@ function make_glif(w,h,d,fr,fg,fb) {
     }
     gif += b.get() + ";"
 
-    return "data:image/gif;base64," + base64Pusher(gif);
+    return "data:image/gif;base64," + base64(gif);
 }

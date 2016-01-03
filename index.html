@@ -1,22 +1,54 @@
-<html data-ng-app="Demo">
-<head>
-  <link rel="stylesheet" href="css/common.css">
-</head>
-  <body>
-    <p>Example pusher gifs:</p>
-    <img data-pusher-gif data-width="999" data-height="333"/><br/><br/>
-    <img data-pusher-gif data-width="1024" data-height="768"/><br/><br/>
-    <img data-pusher-gif data-width="800" data-height="300"/><br/><br/>
-    <img data-pusher-gif data-width="629" data-height="220"/><br/><br/>
-    <img data-pusher-gif width="300" height="100"/><br/><br/>
-    <img data-pusher-gif width="600" height="25"/><br/><br/>
-    <img data-pusher-gif width="700" height="200"/><br/><br/>
-    <img data-pusher-gif width="325" height="50"/><br/><br/>
-    <img data-pusher-gif width="450" height="100"/>
-    <script src="lib/components/lodash/dist/lodash.min.js"></script>
-    <script src="lib/components/angular/angular.min.js"></script>
-    <script src="js/pusher-gif.js"></script>
-    <script src="demo.js"></script>
-    <!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+<html>
+  <head>
+    <style type="text/css">
+
+      body {
+        padding: 44px;
+        font-family: -apple-system, Helvetica, Arial, sans-serif;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .box {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        margin: auto;
+      }
+
+      .frame {
+        position: relative;
+      }
+
+    </style>
+  </head>
+  <body style="visibility: hidden">
+    <h1>Example</h1>
+    <p>Scale browser window and see how elements respond</p>
+    <div class="frame" style="background: #fafafa">
+      <img data-pusher data-width="200" data-height="100" />
+      <div class="box" style="bottom: 0; left: 0;"></div>
+      <div class="box" style="top: 0; left: 0;"></div>
+      <div class="box" style="top: 0; right: 0;"></div>
+      <div class="box" style="bottom: 0; right: 0;"></div>
+      <div class="box" style="bottom: 0; right: 0; left: 0;"></div>
+      <div class="box" style="top: 0; right: 0; left: 0;"></div>
+      <div class="box" style="top: 0; bottom: 0; left: 0;"></div>
+      <div class="box" style="top: 0; bottom: 0; right: 0;"></div>
+    </div>
+    <p>Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="vendor/jeff-epler/glif/dist/glif.js"></script>
+    <script src="pusher.js"></script>
+    <script>/* eslint-disable */
+      pusher.render(function () {
+        $('body').css('visibility', 'visible');
+      });
+    /* eslint-enable */</script>
   </body>
 </html>
